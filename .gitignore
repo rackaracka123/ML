@@ -1,3 +1,4 @@
 
 *.csv
 /Labb3/models
+*.pyc
