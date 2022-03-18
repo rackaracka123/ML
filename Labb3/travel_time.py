@@ -1,9 +1,10 @@
 from joblib import dump, load
+from datetime import datetime
 from sklearn.preprocessing import *
 
 
 def load_model():
-    filename="Labb3/models/2022-03-18 13"
+    filename="Labb3/models/" + datetime.now().strftime("%Y-%m-%d %H")
     model = load(filename + "_model.joblib")
     poly = load(filename + "_poly.joblib")
     min_max = load(filename + "_min_max.joblib")
